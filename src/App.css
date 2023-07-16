@@ -1,0 +1,39 @@
+.navbar {
+  position: relative;
+
+}
+
+.dropdown {
+  background-color: #b798c1;
+  /* transition: top 0.5s ease-in-out; */
+  position: absolute;
+  top: -100%;
+  left: 0;
+  animation: shake-animation 4.72s ease infinite;
+  transform-origin: 50% 50%;
+  width: 100%;
+  visibility: hidden;
+  height: 94vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+@keyframes shake-animation {
+  0% { transform:translate(0,0) }
+ 1.78571% { transform:translate(5px,0) }
+ 3.57143% { transform:translate(0,0) }
+ 5.35714% { transform:translate(5px,0) }
+ 7.14286% { transform:translate(0,0) }
+ 8.92857% { transform:translate(5px,0) }
+ 10.71429% { transform:translate(0,0) }
+ 100% { transform:translate(0,0) }
+}
+
+
+
+.open {
+  top: 100%;
+  visibility: visible;
+}
